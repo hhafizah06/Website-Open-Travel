@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Open Travel — Paket Wisata</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Open Travel</h1>
+    <p>Paket wisata murah & seru, booking langsung di website!</p>
+  </header>
+
+  <main>
+    <!-- Daftar Paket -->
+    <section class="paket-section">
+      <h2>Daftar Paket Wisata</h2>
+      <div class="paket">
+        <h3>Paket 1: Wisata Dieng</h3>
+        <p>Harga: Rp 1.500.000 / orang</p>
+        <p>Durasi: 3 Hari 2 Malam</p>
+        <button onclick="bookNow('Wisata Dieng')">Pesan Sekarang</button>
+      </div>
+      <div class="paket">
+        <h3>Paket 2: Bali Explore</h3>
+        <p>Harga: Rp 2.800.000 / orang</p>
+        <p>Durasi: 4 Hari 3 Malam</p>
+        <button onclick="bookNow('Bali Explore')">Pesan Sekarang</button>
+      </div>
+    </section>
+
+    <!-- Form Booking -->
+    <section class="form-section">
+      <h2>Form Booking</h2>
+      <form id="bookingForm">
+        <input type="text" id="nama" placeholder="Nama Lengkap" required />
+        <input type="text" id="whatsapp" placeholder="Nomor WhatsApp" required />
+        <select id="paket" required>
+          <option value="">-- Pilih Paket --</option>
+          <option value="Wisata Dieng">Wisata Dieng</option>
+          <option value="Bali Explore">Bali Explore</option>
+        </select>
+        <input type="number" id="jumlah" placeholder="Jumlah Orang" required />
+        <button type="submit">Kirim Booking</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Open Travel</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
